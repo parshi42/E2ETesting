@@ -36,6 +36,8 @@ if(browserName.contains("chrome"))
 	 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver");
 	 ChromeOptions options =new ChromeOptions();
 	 options.addArguments("--disablenotifications");
+	 options.addArguments("--Incognito");
+
 	 if(browserName.contains("headless"))
 	 {
 	  options.addArguments("headless");
